@@ -8,6 +8,7 @@ import static org.junit.Assert.assertEquals;
 public class MyClassTest {
     @Test
     public void testAdd() {
+        System.out.println("TESTING ON GOING");
         MyClass myClass = new MyClass();
         assertEquals(3, myClass.add(1, 2));
         assertEquals(0, myClass.add(-1, 1));
