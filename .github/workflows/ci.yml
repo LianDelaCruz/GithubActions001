@@ -15,8 +15,8 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Build project
-        run: mvn clean compile
+      - name: List test files (debug step)
+        run: find . -name '*MyClassTest.java'
 
-      - name: Run tests
-        run: mvn test
+      - name: Build and test with verbose output
+        run: mvn clean install -B -V
